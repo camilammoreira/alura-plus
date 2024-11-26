@@ -87,7 +87,7 @@ body {
     margin-top: 1rem;
 }
 
-.tertiary{
+.dispositives{
     align-items: center;
     text-align: center;
     margin: 5rem 10rem;
@@ -95,15 +95,42 @@ body {
     flex-direction: column;
     gap: 2rem;
 }
-.container__dispositives {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+.dispositives__list {
+    display: flex;
 }
 
-.container__dispositives__exemple {
+.dispositives__list__item {
     padding: 2rem;
 }
 
-.container__tertiary__title {
+.dispositives__list__title {
     font-size: 2rem;
+}
+
+.footer {
+    text-align: center;
+    margin: 5rem 10rem;
+}
+
+.footer__logo {
+    margin: 2.5rem 0;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+}
+
+.footer__list__item a {
+    color: var(--text-principal);
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+
+.footer__text {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
 }
