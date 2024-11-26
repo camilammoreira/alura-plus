@@ -18,20 +18,29 @@ body {
     font-family: var(--text-font);
 }
 
-.principal {
-    background-image: url("img/Background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .container {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.container-box {
+    margin: 0 5rem;
+}
 .container__title {
     font-weight: 700;
+}
+
+.container__image {
+    margin: 1.5rem 0 2rem 0;
 }
 
 .container__button {
@@ -41,9 +50,10 @@ body {
     padding: 1rem;
     border-radius: 5px;
     display: block;
+    margin-bottom: 1rem;
 }
 
-.container__button_secontary {
+.container__button_secondary {
     background-color: transparent;
     border: 1px solid var(--text-principal);
 }
@@ -51,4 +61,49 @@ body {
 .container__notice {
     font-size: 0.75rem;
     color: var(--text-secondary);
+}
+
+.secondary {
+    align-items: center;
+    margin: 5rem 10rem;
+}
+
+.container__secondary__image {
+    width: 80%;
+    padding: 1rem;
+}
+
+.container__secondary__title {
+    font-size: 3rem;
+}
+
+.text__description {
+    color: var(--text-secondary);
+    padding: 0.3rem 0;
+}
+
+.button_inline {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.tertiary{
+    align-items: center;
+    text-align: center;
+    margin: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.container__dispositives {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.container__dispositives__exemple {
+    padding: 2rem;
+}
+
+.container__tertiary__title {
+    font-size: 2rem;
 }
