@@ -1,8 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
-    
+    --text-principal: #FFFFFF;
+    --text-secondary: #C0C0C0;
+    --button-principal: #167BF7;
+    --background-color: #00030C;
+    --text-font: 'Inter';
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-principal);
+    font-family: var(--text-font);
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__title {
+    font-weight: 700;
+}
+
+.container__button {
+    background-color: var(--button-principal);
+    color: var(--text-principal);
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 5px;
+    display: block;
+}
+
+.container__button_secontary {
+    background-color: transparent;
+    border: 1px solid var(--text-principal);
+}
+
+.container__notice {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
 }
