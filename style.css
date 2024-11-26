@@ -3,6 +3,7 @@
     --text-principal: #FFFFFF;
     --text-secondary: #C0C0C0;
     --button-principal: #167BF7;
+    --button-principal-hover: #0b59b8;
     --background-color: #00030C;
     --text-font: 'Inter';
 }
@@ -51,11 +52,23 @@ body {
     border-radius: 5px;
     display: block;
     margin-bottom: 1rem;
+    transition: 300ms;
+}
+
+.container__button:hover {
+    background-color: var(--button-principal-hover);
 }
 
 .container__button_secondary {
     background-color: transparent;
     border: 1px solid var(--text-principal);
+    transition: 300ms;
+}
+
+.container__button_secondary:hover {
+    background-color: var(--text-secondary);
+    border-color: transparent;
+    color: var(--background-color);
 }
 
 .container__notice {
@@ -71,6 +84,11 @@ body {
 .container__secondary__image {
     width: 80%;
     padding: 1rem;
+    transition: 300ms;
+}
+
+.container__secondary__image:hover {
+    width: 90%;
 }
 
 .container__secondary__title {
@@ -127,8 +145,15 @@ body {
     color: var(--text-principal);
     text-decoration: none;
     margin-bottom: 1.5rem;
+    
+    text-decoration: underline dotted transparent;
+    transition: text-decoration-color 300ms;
 }
 
+.footer__list__item a:hover {
+    color: var(--text-secondary);
+    text-decoration-color: var(--text-secondary);
+}
 .footer__text {
     font-size: 0.85rem;
     color: var(--text-secondary);
